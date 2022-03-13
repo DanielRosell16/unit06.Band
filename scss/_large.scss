@@ -1,0 +1,37 @@
+header, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+        grid-template-columns: 51px auto auto;
+}
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+        button{
+                display: none;
+        }//end button
+        justify-self: end;
+        ul, ul.open {
+                position: relative;
+                display: flex;
+                width: auto;
+                background-color: transparent;
+        }
+
+}//end nav
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
