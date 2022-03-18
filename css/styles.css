@@ -377,9 +377,13 @@ main {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  flex-basis: 50%; }
+  flex-wrap: wrap; }
+
+.member {
+  flex-basis: 100%;
+  margin: 0 1%; }
+  .member figure {
+    margin: 0; }
 
 figure.myCircle img {
   float: right;
@@ -420,12 +424,6 @@ footer {
   padding: .5rem 2%;
   text-align: center; }
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
@@ -437,6 +435,9 @@ footer {
     width: 200px; }
 
   /*----------- MAIN --------------*/
+  .member {
+    flex-basis: 48%; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
@@ -461,5 +462,8 @@ footer {
       background-color: transparent; }
 
   /*----------- MAIN --------------*/
+  .member {
+    flex-basis: 23%; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */

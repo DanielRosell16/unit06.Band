@@ -90,11 +90,17 @@ main {
 .flex-container {
 display: flex;
 flex-wrap: wrap;
-width: 100%;
-flex-basis: 50%;
+//width: 100%;
+
 }
 
-
+.member {
+    flex-basis: 100%;
+    margin: 0 1%;
+    figure {
+        margin: 0;
+    }
+}
 
 // this is the the clip path stuff
 
@@ -147,9 +153,3 @@ footer {
 
 
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
